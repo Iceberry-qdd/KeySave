@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/setting_backup_toolbar"
+            style="@style/Toolbar"
+            app:title=""
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:id="@+id/settings_backup_back"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_back"
+                    android:scaleType="centerInside"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/settingBackupActivity_title"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/setting_backup_format"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="@string/settingBackupActivity_fileFormat" />
+            <TextView
+                android:id="@+id/setting_backup_format_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/setting_backup_format_enter"
+                android:layout_marginRight="10dp">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/setting_backup_format_enter"
+                style="@style/SettingsImageView"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/restore_backup"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="@string/settingBackupActivity_restore" />
+            <ImageView
+                style="@style/SettingsImageView"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/settings_backup_file_manager"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="@string/settingBackupActivity_manageFile" />
+            <ImageView
+                style="@style/SettingsImageView"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/start_backup"
+            android:layout_marginTop="10dp"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                android:layout_centerInParent="true"
+                style="@style/SettingsTextView"
+                android:text="@string/settingBackupActivity_startBackup" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

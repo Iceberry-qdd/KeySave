@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#303135</color>
+    <color name="colorPrimaryDark">#232323</color>
+    <color name="colorAccent">#232323</color>
+    <color name="textColor">#d8dada</color>
+    <color name="windowBackground">#202125</color>
+    <color name="colorSwipeRefresh">#000000</color>
+    <color name="itemClicked">#202125</color>
+    <color name="colorControlNormal">#89b5f8</color>
+    <color name="colorControlActivated">#89b5f8</color>
+    <color name="swipeLine">#363b3e</color>
+</resources>

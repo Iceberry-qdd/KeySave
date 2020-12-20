@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="KeyStore">
+
+    </dbname>
+    <version value="1">
+
+    </version>
+    <list>
+        <mapping class="com.iceberry.keysave.Key">
+
+        </mapping>
+    </list>
+</litepal>

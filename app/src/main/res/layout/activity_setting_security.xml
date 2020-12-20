@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/setting_security_toolbar"
+            style="@style/Toolbar"
+            app:title=""
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:id="@+id/settings_security_back"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_back"
+                    android:scaleType="centerInside"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/textColor"
+                    android:text="@string/settingSecurityActivity_title" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/settings_security_number_on"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="@string/settingSecurityActivity_op1" />
+            <Switch
+                android:id="@+id/settings_security_key_on_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorPrimary" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/settings_security_fingerprint_on"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="@string/settingSecurityActivity_op2" />
+            <Switch
+                android:id="@+id/settings_security_fingerprint_on_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/settings_security_number_look"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="@string/settingSecurityActivity_op3" />
+            <Switch
+                android:id="@+id/settings_security_key_look_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/settings_security_fingerprint_look"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="@string/settingSecurityActivity_op4" />
+            <Switch
+                android:id="@+id/settings_security_fingerprint_look_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/SettingsRelativeLayout"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="@string/settingSecurityActivity_op5" />
+            <Switch
+                android:id="@+id/settings_security_No_screenshots_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/settings_security_key_change"
+            style="@style/SettingsRelativeLayout"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="@string/settingSecurityActivity_op6" />
+            <ImageView
+                style="@style/SettingsImageView"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/settings_security_fingerprint_manage"
+            style="@style/SettingsRelativeLayout"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="@string/settingSecurityActivity_op7" />
+            <ImageView
+                style="@style/SettingsImageView"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

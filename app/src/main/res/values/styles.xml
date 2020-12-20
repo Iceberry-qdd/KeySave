@@ -1,0 +1,124 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="colorControlActivated">@color/colorControlNormal</item>
+        <item name="elevation">0dp</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">false</item>
+    </style>
+    <style name="AppTheme.StartingWindowTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>//取消Actionbar
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>//设置全屏
+        <item name="android:windowBackground">@drawable/open</item>
+    </style>
+    <style name="AppTheme.FullScreenTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>//取消Actionbar
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>//设置全屏
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+    <style name="Toolbar" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.DayNight</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:iconTint" tools:targetApi="o">@color/textColor</item>
+    </style>
+    <style name="ToolbarText">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="ToolbarTitle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="NavigationTheme" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="SettingsImageView" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/ic_setting_enter</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:iconTint" tools:targetApi="o">@color/textColor</item>
+
+    </style>
+    <style name="SettingsRelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/textview_click_setting_item</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+    <style name="SettingsTextView" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+    <style name="keyEdiTLinearLayoutTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+    <style name="KeyTextViewTheme">
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="KeyEditTextTheme">
+        <item name="singleLine">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3.5</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_color</item>
+    </style>
+    <style name="CannotAddDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="SelectFileFormatDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="WelcomeDialog" parent="Theme.AppCompat.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

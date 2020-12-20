@@ -1,0 +1,95 @@
+<resources>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!--shortcuts_scan-->
+    <string name="scan_static_disabled_message" translatable="true">不可用</string>
+    <string name="scan_static_shortcut_long_label" translatable="true">扫描二维码</string>
+    <string name="scan_static_shortcut_short_label" translatable="true">扫描</string>
+
+    <!--shortcuts_add-->
+    <string name="add_static_disabled_message" translatable="true">不可用</string>
+    <string name="add_static_shortcut_long_label" translatable="true">添加条目</string>
+    <string name="add_static_shortcut_short_label" translatable="true">添加</string>
+    <string name="fingerLockActivity_desp" translatable="true">请将手指放在您手机的指纹传感器上</string>
+    <string name="fingerLockActivity_useKey" translatable="true">使用密码</string>
+    <string name="newKeyActivity_cancel" translatable="true">取消</string>
+    <string name="newKeyActivity_title" translatable="true">新建条目</string>
+    <string name="newKeyActivity_commit" translatable="true">完成</string>
+    <string name="newKeyActivity_sort" translatable="false">类别</string>
+    <string name="newKeyActivity_nickname" translatable="false">昵称</string>
+    <string name="newKeyActivity_account" translatable="false">账户</string>
+    <string name="newKeyActivity_password" translatable="false">密码</string>
+    <string name="numberLockActivity_forget" translatable="true">忘记</string>
+    <string name="scanResult_title" translatable="true">扫描结果</string>
+    <string name="scanResultActivity_desp" translatable="true">扫描到以下内容：</string>
+    <string name="settingAboutActivity_title" translatable="true">关于</string>
+    <string name="settingBackupActivity_title" translatable="true">备份与恢复</string>
+    <string name="settingBackupActivity_fileFormat" translatable="true">导出格式</string>
+    <string name="settingBackupActivity_restore" translatable="true">恢复备份</string>
+    <string name="settingBackupActivity_manageFile" translatable="true">管理备份文件</string>
+    <string name="settingBackupActivity_startBackup" translatable="true">开始备份</string>
+    <string name="settingSecurityActivity_op1" translatable="true">启动时使用密码</string>
+    <string name="settingSecurityActivity_title" translatable="true">安全与隐私</string>
+    <string name="settingSecurityActivity_op2" translatable="true">启动时使用指纹</string>
+    <string name="settingSecurityActivity_op3" translatable="true">查看明文时使用密码</string>
+    <string name="settingSecurityActivity_op4" translatable="true">查看明文时使用指纹</string>
+    <string name="settingSecurityActivity_op5" translatable="true">密码详情页禁止截屏</string>
+    <string name="settingSecurityActivity_op7" translatable="true">指纹管理</string>
+    <string name="settingActivity_title" translatable="true">设置</string>
+    <string name="settingActivity_op1" translatable="true">安全与隐私</string>
+    <string name="settingActivity_op2" translatable="true">夜间模式</string>
+    <string name="settingActivity_op3" translatable="true">备份与恢复</string>
+    <string name="settingActivity_op4" translatable="true">关于</string>
+    <string name="settingActivity_laboratory" translatable="false">☣ Laboratory</string>
+    <string name="viewKeyActivity_title" translatable="true">详细</string>
+    <string name="viewKeyActivity_sort" translatable="false">类别</string>
+    <string name="viewKeyActivity_password" translatable="false">密码</string>
+    <string name="viewKeyActivity_nickname" translatable="false">昵称</string>
+    <string name="viewKeyActivity_look" translatable="true">查看二维码</string>
+    <string name="viewKeyActivity_desp" translatable="true">面对面扫一扫，分享您的密码</string>
+    <string name="cannotAddDialog_info" translatable="true">提交失败(一个或多个字段为空!)</string>
+    <string name="cannotAddDialog_btn" translatable="true">确定</string>
+    <string name="customBarcodeScanner_desp" translatable="true">请将二维码置于取景框内扫描</string>
+    <string name="emptyPage_desp" translatable="true">什么也没有，开始记录吧！</string>
+    <string name="navHeader_appName" translatable="true">密码记</string>
+    <string name="selectFileFormatDialog_title" translatable="true">选择备份文件格式</string>
+    <string name="selectFileFormatDialog_op1" translatable="false">.ks</string>
+    <string name="selectFileFormatDialog_op2" translatable="false">.ksp</string>
+    <string name="selectFileFormatDialog_op3" translatable="false">.xlsx</string>
+    <string name="selectFileFormatDialog_cancelBtn" translatable="true">取消</string>
+    <string name="selectFileFormatDialog_commitBtn" translatable="true">确定</string>
+    <string name="welcomeDialog_title" translatable="true">欢迎您使用密码记</string>
+    <string name="welcomDialog_btn" translatable="true">开始使用</string>
+    <string name="viewKeyActivity_account" translatable="false">账户</string>
+    <string name="navMenu_list" translatable="true">列表</string>
+    <string name="navMenu_scan" translatable="true">扫描二维码</string>
+    <string name="navMenu_setting" translatable="true">设置</string>
+    <string name="navMenu_help" translatable="true">帮助与反馈</string>
+    <string name="toolbarMenu_search" translatable="true">搜索</string>
+    <string name="app_name" translatable="true">密码记</string>
+    <string name="settingSecurityActivity_op6">更改密码</string>
+    <string name="mainActivitySnackbar_action" translatable="true">撤销</string>
+    <string name="mainActivitySnackbar_info" translatable="true">已删除</string>
+    <string name="MainActivityScanbar_cancelScan" translatable="true">取消扫描</string>
+    <string name="MainActivityMailTo" translatable="false">qddwork@outlook.com</string>
+    <string name="MainActivityMailSubject" translatable="true">[密码记]问题反馈</string>
+    <string name="NewActivitySnakbar_info" translatable="true">权限被拒绝</string>
+    <string name="NumberLockActivity_passwordError" translatable="true">密码错误</string>
+    <string name="BackupActivityToast_backupSucceed">备份成功</string>
+    <string name="BackupActivityToast_existed">备份文件已存在！</string>
+    <string name="selectFileFormatDialog_okBtn">确定</string>
+    <string name="KeyCreateActivity_Info1">请再次输入密码</string>
+    <string name="KeyCreateActivity_info2">两次输入的密码不一致，请重新输入</string>
+</resources>

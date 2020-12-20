@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcuts_scan"
+        android:shortcutDisabledMessage="@string/scan_static_disabled_message"
+        android:shortcutId="scan"
+        android:shortcutLongLabel="@string/scan_static_shortcut_long_label"
+        android:shortcutShortLabel="@string/scan_static_shortcut_short_label">
+        <categories android:name="android.shortcut.conversation" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.iceberry.keysave.activity.main.CustomCaptureActivity"
+            android:targetPackage="com.iceberry.keysave" />
+    </shortcut>
+
+<!--    <shortcut-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_shortcuts_add"-->
+<!--        android:shortcutDisabledMessage="@string/add_static_disabled_message"-->
+<!--        android:shortcutId="add"-->
+<!--        android:shortcutLongLabel="@string/add_static_shortcut_long_label"-->
+<!--        android:shortcutShortLabel="@string/add_static_shortcut_short_label">-->
+<!--        <categories android:name="android.shortcut.conversation" />-->
+<!--        <intent-->
+<!--            android:action="android.intent.action.VIEW"-->
+<!--            android:targetClass="com.iceberry.keysave.activity.main.NewKeyActivity"-->
+<!--            android:targetPackage="com.iceberry.keysave" />-->
+<!--    </shortcut>-->
+</shortcuts>

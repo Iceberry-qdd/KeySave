@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            style="@style/Toolbar"
+            app:title=""
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:id="@+id/settings_laboratory_back"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_back"
+                    android:scaleType="centerInside" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/textColor"
+                    android:text="Laboratory" />
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/settings_lab_op"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Enable lab" />
+            <Switch
+                android:id="@+id/settings_lab_op_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/settings_lab_finger"
+            android:layout_marginTop="1dp"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Enable fingerprint" />
+            <Switch
+                android:id="@+id/settings_lab_finger_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/settings_lab_restore_backup"
+        style="@style/SettingsRelativeLayout">
+        <TextView
+            style="@style/SettingsTextView"
+            android:text="Enable restore backup" />
+        <Switch
+            android:id="@+id/settings_lab_restore_backup_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:id="@+id/settings_lab_number_lock"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Enable number lock" />
+            <Switch
+                android:id="@+id/settings_lab_number_lock_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:id="@+id/settings_lab_search"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Enable search" />
+            <Switch
+                android:id="@+id/settings_lab_search_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:id="@+id/settings_lab_number_lock_start"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Preview number lock surface" />
+            <ImageView
+                style="@style/SettingsImageView"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:id="@+id/settings_lab_fingerprint_start"
+            style="@style/SettingsRelativeLayout">
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Preview fingerprint surface" />
+            <ImageView
+                style="@style/SettingsImageView"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

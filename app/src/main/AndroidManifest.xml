@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iceberry.keysave">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:resizeableActivity="false"
+        tools:targetApi="n">
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <receiver
+            android:name=".receive.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.iceberry.keysave.BROADCAST1" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.nav.setting.KeyCreateActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.nav.setting.LabActivity" />
+        <activity
+            android:name=".activity.main.FingerLockActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.main.NumberLockActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"/>
+        <!-- 设置二维码扫描界面方向为竖屏 -->
+        <activity
+            android:name=".activity.main.CustomCaptureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activity.nav.setting.BackupActivity" />
+        <activity android:name=".activity.nav.setting.SecurityActivity" />
+        <activity android:name=".activity.ScanResultActivity" />
+        <activity android:name=".activity.nav.SettingsActivity" />
+        <activity android:name=".activity.nav.setting.AboutActivity" /> <!-- <activity android:name=".EditKeyActivity" /> -->
+        <activity
+            android:name=".activity.main.ViewKeyActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.main.NewKeyActivity"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:theme="@style/AppTheme.StartingWindowTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+    </application>
+
+</manifest>

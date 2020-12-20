@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/background_light</color>
+    <color name="colorPrimaryDark">@android:color/background_dark</color>
+    <color name="colorAccent">@android:color/background_light</color>
+    <color name="colorSwipeRefresh">@android:color/black</color>
+    <color name="colorControlNormal">#1a71e4</color>
+    <color name="colorControlActivated">#1a71e4</color>
+    <color name="textColor">#000000</color>
+    <color name="windowBackground">#eeeeee</color>
+    <color name="itemClicked">#eeeeee</color>
+    <color name="swipeLine">#eeeeee</color>
+</resources>
